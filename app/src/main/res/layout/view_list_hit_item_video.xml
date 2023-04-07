@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/exoplayer_list_hit_video"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/exoplayer_height"
+        app:layout_constraintTop_toTopOf="parent"
+        app:resize_mode="fill" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/exoplayer_list_hit_video">
+
+        <include
+            android:id="@+id/row_views"
+            layout="@layout/view_list_hit_detail_row"/>
+
+        <include
+            android:id="@+id/row_downloads"
+            layout="@layout/view_list_hit_detail_row" />
+
+        <include
+            android:id="@+id/row_likes"
+            layout="@layout/view_list_hit_detail_row" />
+
+        <include
+            android:id="@+id/row_comments"
+            layout="@layout/view_list_hit_detail_row" />
+
+        <include
+            android:id="@+id/row_user_id"
+            layout="@layout/view_list_hit_detail_row" />
+
+        <include
+            android:id="@+id/row_user"
+            layout="@layout/view_list_hit_detail_row" />
+
+        <TextView
+            android:id="@+id/tv_label_image_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:id="@+id/iv_detail_user_picture"
+            android:layout_width="@dimen/video_list_hit_item_width"
+            android:layout_height="@dimen/video_list_hit_item_height"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

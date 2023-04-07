@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <dimen name="rv_picture_size">75dp</dimen>
+    <dimen name="detail_header_image_height">250dp</dimen>
+    <dimen name="detail_bottom_user_size">75dp</dimen>
+    <dimen name="exoplayer_height">300dp</dimen>
+    <dimen name="video_list_hit_item_height">100dp</dimen>
+    <dimen name="video_list_hit_item_width">100dp</dimen>
+
+</resources>
