@@ -6,7 +6,6 @@
 
     <EditText
         android:id="@+id/et_search_input_video"
-        android:inputType="text|number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
